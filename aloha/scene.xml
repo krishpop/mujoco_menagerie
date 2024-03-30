@@ -86,5 +86,25 @@
     <geom class="frame" pos="-0.6 -0.26 0.12" quat="0.923 0.382 0 0" material="metal" mesh="angled_extrusion"/>
     <geom class="frame" pos="0.43 -0.361 1.02" quat="0 0 0 1" mesh="extrusion_2040_1000"/>
     <geom class="frame" pos="0 -0.391 -0.01" quat="0 0 0 1" mesh="wormseye_mount"/>
+
+    <body name="target1" pos="-0.15 0. .25" quat="1 0 0 0" mocap="true">
+      <geom type="box" size=".05 .05 .05" contype="0" conaffinity="0" rgba=".6 .3 .3 .5"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+    <body name="target2" pos="0.15 0. .25" quat="1 0 0 0" mocap="true">
+      <geom type="box" size=".05 .05 .05" contype="0" conaffinity="0" rgba=".6 .3 .3 .5"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+
+
   </worldbody>
+
+  <keyframe>
+    <key name="home" qpos="
+    0 -0.96 1.16 0 -0.3 0 0.02239 -0.02239
+    0 -0.96 1.16 0 -0.3 0 0.02239 -0.02239"
+      ctrl="
+    0 -0.96 1.16 0 -0.3 0 0.
+    0 -0.96 1.16 0 -0.3 0 0."/>
+  </keyframe>
 </mujoco>
